@@ -1,9 +1,12 @@
 import React from 'react'
+import NavBar from './Navigation_Bar'
 
 const app = () => {
-  return (
-    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, perferendis?</div>
-  )
+
+ return (
+   <NavBar/>
+        )
+  
 }
 
 export default app
