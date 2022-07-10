@@ -9,29 +9,60 @@ function ListItem(props){
     )
 }
 
+function CenterHeading(props){
+    return (
+        <div className="My Heading">
+            <h1>
+                {props.title}
+            </h1>
+        </div>
+    )
+        
+    
+}
+
+function NavBarLogo(props){
+    return (
+        <div className="navbarImage">
+            <img 
+            src= {props.image}
+            alt= {props.title}
+            width = "50px"
+           ></img>
+        </div>
+    )
+}
 function NavBar(){
     return (
         <div>
-            <nav className="navbar fixed navbar-dark bg-primary text-white" id= "myNavBar">
-               
-                    <ul className="nav nav-pills nav-fill flex-column flex-sm-row">
-                        <ListItem
-                            detail = "Home"
-                        />
-                        <ListItem
-                            detail = "Learn"
-                        />
-                        <ListItem
-                            detail = "Information"
-                        />
-                        <ListItem
-                            detail = "More"
-                        />
-                    </ul>
+            <nav className="navbar fixed navbar-dark text-white " id= "myNavBar">
+                 <ul className="nav nav-pills nav-fill flex-column flex-sm-row">
+                    <ListItem
+                        detail = "Home"
+                    />
+                    <ListItem
+                        detail = "Learn"
+                    />
+                    <ListItem
+                        detail = "Information"
+                    />
+                    <ListItem
+                        detail = "More"
+                    />
+                </ul>
 
-                
-            </nav>  
-        </div>
+                <CenterHeading
+                    title = "Learning ReactJs"
+                />
+
+                <NavBarLogo
+                    image = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                    title = "Logo"
+                />
+
+               
+        </nav>  
+    </div>
     )
 }
 export default NavBar

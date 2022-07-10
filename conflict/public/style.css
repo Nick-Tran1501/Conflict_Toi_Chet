@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +15,22 @@ nav{
 }
 
  li{
+    font-family: 'Roboto', sans-serif;
     width: auto;
     margin: 1rem 2rem 1rem 1rem;
+}
+
+.navbar{
+    background-color: rgb(25, 40, 60);
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar h1{
+    font-family: 'Edu TAS Beginner', cursive;
+
+}
+
+.navbarImage{
+    margin-right: 2rem;
 }
