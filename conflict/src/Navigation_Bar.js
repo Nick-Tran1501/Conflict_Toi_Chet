@@ -38,7 +38,7 @@ function NavBar(){
             <nav className="navbar fixed navbar-dark text-white " id= "myNavBar">
                  <ul className="nav nav-pills nav-fill flex-column flex-sm-row">
                     <ListItem
-                        detail = "Home"
+                        detail = "Hello"
                     />
                     <ListItem
                         detail = "Learn"
